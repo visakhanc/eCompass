@@ -10,8 +10,9 @@ This is an easy to build eCompass Display which shows the tilt compensated Headi
 Building of Source
 ------------------
 
-1. Download this repository and the [common_libs](https://github.com/visakhanc/common_libs) repository to the same directory. 
+Make sure AVR-GCC Toolchain is installed. For Windows, just install WinAVR.
 
+1. Download this repository and the [common_libs](https://github.com/visakhanc/common_libs) repository to the same directory. 
 2. Rename *'common_libs'* directory to *'common'*. 
 
 For example, if you copied the repositories to *'AVR_Projects'* directory, the directory structure would be like:
@@ -65,6 +66,13 @@ HMC5883L digital compass module gives 3-axis magnetic field component values, wh
 
 That is, when the module is tilted, the calculated Heading value will be incorrect. To compensate for the tilt, an accelerometer sensor is used to calculate the tilt angles (Roll and Pitch). The tilt angles are applied to a correction formula to obtain the accurate Heading value. Here, accelerometer values are read from MPU6050 Accelerometer+Gyroscope module.
 
+
+
+Demo
+----
+
+A video showing the eCompass in action is here:
+https://www.youtube.com/watch?v=spmMMIMboPY
 
 
 
